@@ -1,0 +1,314 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.partida {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+body {
+    background-image: url("https://www.pescar.org.ar/wp-content/uploads/2021/10/Home-slider1.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-family: 'Lemon', cursive;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: normal;
+}
+li {
+    width: 200px;
+    height: 100px;
+    border: solid 1px black;
+    margin-bottom: 5px;
+   
+}
+ul li {
+    margin: 5px;
+    position: relative;
+}
+header , main{ 
+    padding: 10px 40px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 26, 102);
+    height: 100px;
+}
+header a {
+    text-decoration: none;
+    padding: 6px 20px;
+    background-color: whitesmoke;
+    color: #444;
+    border-radius: 5px;
+
+}
+ul{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    margin: 40px auto;
+    
+}
+ul li img {
+    width: 200px;
+    height: 100px;
+    transform: rotate(0);
+    transition: .5s;
+    backface-visibility: hidden;
+    
+    
+}
+ul li  img + img {
+    transform: rotateY(180deg);
+    transition: .5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* 1111111111111111== */
+/* ul li:hover img{
+    transform: rotateY(180deg);
+
+}
+ul li:hover img + img {
+    transform: rotateY(0);
+
+} */
+/* 1111111111111111== */
+/* footer {
+    height:150px;
+    background-color: #444;
+    color: aliceblue;
+    border-top: 2px solid #111;
+    padding: 0 40px;
+    text-align: center;
+
+}
+footer span {
+    color: rgb(23, 23, 90);
+}
+#modal {
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+body.noscroll{
+    overflow: hidden;
+}
+#modal div {
+    background: white;
+    padding: 20px 50px;
+    width: 60vw;
+    box-sizing: border-box;
+}  */
+body{
+    background-image: url("https://www.pescar.org.ar/wp-content/uploads/2021/10/Home-slider1.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-family: 'Lemon', cursive;
+    text-transform: uppercase;
+    color: white;
+    font-weight: normal;
+}
+
+h2{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+header,
+main{
+    padding: 10px 40px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3739be;
+    
+}
+header a{
+    text-decoration: none;
+    padding: 6px 20px;
+    background: white;
+    color: #444;
+    border-radius: 5px;
+}
+header img{
+    width: 5%;
+   
+}
+
+
+ul{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 40px auto;
+   
+}
+
+ul li{
+    margin-bottom: 5px;
+    position: relative;
+}
+
+ul li img{
+    border-radius: 25px;
+    width: 200px;
+    height: 120px;
+    transform: rotateY(0deg);
+    transition: .2s;
+    backface-visibility: hidden;
+}
+
+ul li img + img{
+    transform: rotateY(180deg);
+    transition: .2s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+ul li.fija img,
+ul li.seleccionado img{
+    transform: rotateY(180deg);
+}
+
+ul li.fija img + img,
+ul li.seleccionado img + img{
+    transform: rotateY(0deg);
+}
+
+footer{
+    height: 100px;
+    background: #222;
+    color: white;
+    padding: 0 40px;
+    text-align: center;
+    border-top: 2px solid #111;
+}
+
+footer span{
+    color: pink;
+    font-size: 1.2em;
+}
+
+
+
+#datos{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #01baef;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#datos h2{
+    line-height: 100%;
+    margin: 0;
+}
+
+body.noscroll{
+    overflow: hidden;
+}
+
+#modal{
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal div{
+    background: white;
+    padding: 20px 50px;
+    width: 60vw;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 260px) and (max-width: 720px) {
+    header img{
+        width: 0%;
+       
+    }
+    ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        justify-content: space-between;
+        margin: 40px auto;
+        
+    }
+    ul li img{
+        border-radius: 25px;
+        width: 90%;
+        height: 80%;
+        transform: rotateY(0deg);
+        transition: .2s;
+        backface-visibility: hidden;
+    }
+    header{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #3739be;
+        
+    }
+    h1{
+        font-family: 'Lemon', cursive;
+        font-size: small;
+        text-transform: uppercase;
+        color: white;
+        font-weight: normal;
+    }
+    header a{
+        width: 15%;
+        text-decoration: none;
+        padding: 6px 20px;
+        background: white;
+        color: #444;
+        border-radius: 5px;
+    }
+
+
+}
+    
